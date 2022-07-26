@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from './components/MyComponent';
 
 function App() {
+
+
+  //JSX = html + js
+  const name = 'eric';
+  const testObj = { name: 'eric', channel: 'hoidanit' }
+
+
+  //template
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <MyComponent />
         </p>
         <a
           className="App-link"
